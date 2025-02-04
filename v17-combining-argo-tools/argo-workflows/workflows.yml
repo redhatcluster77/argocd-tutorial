@@ -6,7 +6,7 @@ spec:
   arguments:
     parameters:
       - name: repo-url
-        value: https://USERNAME:TOKEN@github.com/devopshobbies/argocd-tutorial.git
+        value: https://redhatcluster77:TOKEN@github.com/redhatcluster77/argocd-tutorial.git
       - name: branch
         value: main
       - name: nexus-registry
