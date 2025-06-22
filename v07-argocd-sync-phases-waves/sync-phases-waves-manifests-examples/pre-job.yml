@@ -13,4 +13,4 @@ spec:
           command: ["/bin/sh", "-c"]
           args: ["if curl -s http://172.17.0.232:32659 | grep -qi 'running'; then echo 'Mattermost is up and  Running'; exit 0; else echo 'Mattermost is NOT accessible'; exit 1; fi"]
       restartPolicy: Never
-  backoffLimit: 0
+  backoffLimit: 3
