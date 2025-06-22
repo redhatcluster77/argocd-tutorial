@@ -2,8 +2,6 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   generateName: mattermost-post-job-success-
-  annotations:
-    argocd.argoproj.io/hook: PostSync
 spec:
   template:
     spec:
@@ -16,7 +14,7 @@ spec:
             value: "MESSAGE FROM ARGOCD: The last sync is:  *** Sync OK ***"
           - name: url
             value: "172.17.0.232"
-          - name: token
+          - name: token			###obossoi token e likhbo ##
             value: "6ggtjy63q7bk9k9k7zpuzmqiyr"
           - name: scheme
             value: "http"
@@ -27,4 +25,4 @@ spec:
           - name: team_name
             value: "DevOps-Hobbies"
       restartPolicy: Never
-  backoffLimit: 3
+  backoffLimit: 0
