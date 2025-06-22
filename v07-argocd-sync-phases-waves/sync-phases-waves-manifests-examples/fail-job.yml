@@ -10,21 +10,21 @@ spec:
       containers:
         - name: mattermost-failure
           image: 172.17.0.233:5000/mattermost:final
-          command: [ "python3", "mattermost.py"]
+          command: ["python3", "mattermost.py"]
           env:
-          - name: message
-            value: "MESSAGE FROM ARGOCD: The last sync is:  *** Sync Failed ***"
-          - name: url
-            value: "172.17.0.232"
-          - name: token
-            value: "6ggtjy63q7bk9k9k7zpuzmqiyr"
-          - name: scheme
-            value: "http"
-          - name: port
-            value: "32659"
-          - name: channel_name
-            value: "argocd-course"
-          - name: team_name
-            value: "DevOps-Hobbies"
+            - name: message
+              value: "MESSAGE FROM ARGOCD: The last sync is:  *** Sync Failed ***"
+            - name: url
+              value: "172.17.0.232"
+            - name: token
+              value: "6ggtjy63q7bk9k9k7zpuzmqiyr"
+            - name: scheme
+              value: "http"
+            - name: port
+              value: "32659"
+            - name: channel_name
+              value: "argocd-course"
+            - name: team_name
+              value: "DevOps-Hobbies"
       restartPolicy: Never
-  backoffLimit: 3
+  backoffLimit: 0
