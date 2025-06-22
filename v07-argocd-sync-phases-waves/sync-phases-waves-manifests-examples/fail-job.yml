@@ -27,4 +27,4 @@ spec:
           - name: team_name
             value: "DevOps-Hobbies"
       restartPolicy: Never
-  backoffLimit: 0
+  backoffLimit: 3
