@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
         - name: mattermost-success
-          image: mattermost:final
+          image: 172.17.0.233:5000/mattermost:final
           command: [ "python3", "mattermost.py"]
           env:
           - name: message
