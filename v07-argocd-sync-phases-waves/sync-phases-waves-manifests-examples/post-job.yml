@@ -10,7 +10,7 @@ spec:
       containers:
         - name: mattermost-success
           image: mattermost:final
-          command: [ "python3", "mattermost_api.py"]
+          command: [ "python3", "mattermost.py"]
           env:
           - name: message
             value: "MESSAGE FROM ARGOCD: The last sync is:  *** Sync OK ***"
